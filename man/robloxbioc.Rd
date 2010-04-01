@@ -108,9 +108,6 @@ robloxbioc(x, ...)
   Kohl, M. (2005) \emph{Numerical Contributions to the Asymptotic Theory of Robustness}. 
   Bayreuth: Dissertation.
 
-  Kohl M. and Deigner H.P. (2009). Using infinitesimally robust estimators for 
-  preprocessing gene expression data. In preparation.
-
   Rieder, H. (1994) \emph{Robust Asymptotic Statistics}. New York: Springer.
 
   Rieder, H., Kohl, M. and Ruckdeschel, P. (2008) The Costs of not Knowing
@@ -134,9 +131,9 @@ robloxbioc(x, ...)
 ind <- rbinom(200, size=1, prob=0.05) 
 X <- matrix(rnorm(200, mean=ind*3, sd=(1-ind) + ind*9), nrow = 2)
 robloxbioc(X)
-robloxbioc(X, steps = 3)
+robloxbioc(X, steps = 5)
 robloxbioc(X, eps = 0.05)
-robloxbioc(X, eps = 0.05, steps = 3)
+robloxbioc(X, eps = 0.05, steps = 5)
 
 ## the function is designed for large scale problems
 X <- matrix(rnorm(50000*20, mean = 1), nrow = 50000)
