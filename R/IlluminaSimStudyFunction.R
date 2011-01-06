@@ -39,12 +39,13 @@ IlluminaSimStudy <- function(n, M, eps, seed = 123,
 
 
     if(plot2){
-        ind <- sample(1:M, min(M, 20))
+        ind <- if(M <= 20) 1:M else sample(1:M, 20)
         if(plot1) dev.new()
+        M1 <- min(M, 20)
         print(
-          stripplot(rep(1:min(M, 20), each = n) ~ as.vector(Mre[ind,]), 
+          stripplot(rep(1:M1, each = n) ~ as.vector(Mre[ind,]), 
                     ylab = "samples", xlab = "x", pch = 20,
-                    main = "Randomly chosen samples")
+                    main = ifelse(M <= 20, "Samples", "20 randomly chosen samples"))
         )
     }
 
@@ -83,6 +84,7 @@ IlluminaSimStudy <- function(n, M, eps, seed = 123,
         plot(c(0,1), c(1, 0), type = "n", axes = FALSE)
         legend("center", c("ML", "Med/MAD", "Illumina", "rmx"),
                fill = myCol, ncol = 4, cex = 1.5)
+        op$cin <- op$cra <- op$csi <- op$cxy <-  op$din <- NULL
         on.exit(par(op))
     }
 
