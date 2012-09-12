@@ -116,7 +116,7 @@ flush(stderr()); flush(stdout())
 ### Name: robloxbioc
 ### Title: Generic Function for Preprocessing Biological Data
 ### Aliases: robloxbioc robloxbioc-methods robloxbioc,matrix-method
-###   robloxbioc,AffyBatch-method robloxbioc,BeadLevelList-method
+###   robloxbioc,AffyBatch-method robloxbioc,beadLevelData-method
 ### Keywords: robust
 
 ### ** Examples
@@ -161,8 +161,10 @@ legend("topleft", c("MAS", "roblox"), pch = c(1, 20))
 ## using Illumina-Data
 ## Not run: 
 ##D ## "Not run" just because of computation time
-##D data(BLData)
-##D BSData <- robloxbioc(BLData, eps.upper = 0.5)
+##D require(beadarrayExampleData)
+##D data(exampleBLData)
+##D res <- robloxbioc(exampleBLData, eps.upper = 0.5)
+##D res
 ## End(Not run)
 
 
