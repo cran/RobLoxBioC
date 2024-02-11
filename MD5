@@ -1,4 +1,4 @@
-aedb6f4b6b0a970b699fc660cbad78a2 *DESCRIPTION
+18f212c3387b0fb9a58a7802f8806413 *DESCRIPTION
 a980defc7c554707e5f6184a45568192 *NAMESPACE
 5a1b548175a548b2cf2490d3b1dae00a *R/00pre2160.R
 20e3edc358a352c2aa67f07e13fdc8f7 *R/0AllGeneric.R
@@ -17,7 +17,7 @@ d080cc3aad4075b21c534b8d3a7d6a31 *inst/scripts/AffymetrixSimStudy.R
 34c4c1e8007cc056237d36cdf6080407 *inst/scripts/IlluminaExample.R
 62ccbd1d60892ad3741a9ca59de2a285 *inst/scripts/IlluminaReproducibility.R
 40e0f0793a6241ae276d38bed3c7966a *inst/scripts/IlluminaSimStudy.R
-16dc156bb2b362a92abdb0dd6500f7a2 *man/0RobLoxBioC-package.Rd
+c3cd0af84ba44b1f792998df15fb5721 *man/0RobLoxBioC-package.Rd
 26ac5b2066cce264d4256a910d94a748 *man/KolmogorovMinDist.Rd
 3ce0465eff913d22798cccfd873d5686 *man/SimStudies.Rd
 54b25ee89f0c9e5f4f6b79d5d83e2376 *man/robloxbioc.Rd
